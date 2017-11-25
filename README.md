@@ -4,5 +4,6 @@ ESP8266 Based WiFi Connectivity monitor. This Script Ping For Google Public DNS 
 
 Future Work 
 -----------
-Add an Photo Resister to analog pin and detect Background Light level to decide backlight blinking based on that input because backlight brightness cannot be controlled
+* Add an Photo Resister to analog pin and detect Background Light level to decide backlight blinking based on that input because backlight brightness cannot be controlled
+* Add another output to a relay if there is an error.
 
