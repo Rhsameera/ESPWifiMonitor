@@ -1,6 +1,3 @@
-/*
- * This example show how to ping a remote machine using it's hostname
- */
 
 #include <ESP8266WiFi.h>
 #include <ESP8266Ping.h>
@@ -79,11 +76,7 @@ void setup() {
 	}	
 	}
 	
-  //=====================
-  
-	//strcpy(connectedssid,ssid);
-	//WiFi.begin(ssid, password);
-	
+
   
 
   Wire.begin();
@@ -289,9 +282,7 @@ void wifimonitor(int wmstatus){
 				curpos = 12;
 			}
 		}
-		  //----------------------
-
-			
+				
 		  
 	  }
 	   
