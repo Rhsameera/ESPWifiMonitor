@@ -4,13 +4,13 @@
 #include <Wire.h>
 #include <LiquidCrystal_PCF8574.h>
 
-const char* ssid2     = "SSID 1";
-const char* password2 = "SSID 1 Password";
-const char* ssid     = "SSID 2";
-const char* password = "SSID 2 Password";
+const char* ssid2     = "SSID 1"; //Primary Wifi
+const char* password2 = "SSID 1 Password"; //Primary Wifi Password
+const char* ssid     = "SSID 2"; //Secondary Wifi
+const char* password = "SSID 2 Password"; //Secondary Wifi Password
 const char* remote_host = "8.8.8.8"; // Host to ping
 
-bool lcdled = true; // LCD led blinking when there is an error in connection
+bool lcdled = true; // True = LCD Backlight start blinking when there is an error in the connection (Unable to ping the host)
 
 char connectedssid[20];
 
@@ -50,7 +50,7 @@ void setup() {
 	else
 	for (int i = 0; i < n; ++i)
 	{
-		// Print SSID for each network found
+		// Print SSID for each network found of serial
 
 			Serial.println(WiFi.SSID(i));
 		if (WiFi.SSID(i) == ssid){
